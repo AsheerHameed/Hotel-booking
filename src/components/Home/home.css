@@ -1,0 +1,38 @@
+.main_class {
+  display: flex;
+}
+.text_area {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main_head {
+  font-size: 8.2rem !important;
+  color: #fff;
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+}
+.stay {
+  color: #c4ae83;
+}
+.sub_head {
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 2rem !important;
+  line-height: 28px !important;
+  color: #fff;
+}
+.btns {
+  padding: 1rem;
+  background-color: #c4ae83;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+.photo {
+  width: 400px !important;
+  height: 400px !important;
+}
