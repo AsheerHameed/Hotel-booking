@@ -6,8 +6,8 @@ const App = () => {
   return (
     <div className="main">
       {/* <Navbar /> */}
-      {/* <Home /> */}
-      <Features />
+      <Home />
+      {/* <Features /> */}
       {/* <Rooms /> */}
       {/* <Message /> */}
     </div>
