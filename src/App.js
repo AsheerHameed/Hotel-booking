@@ -4,12 +4,12 @@ import { Navbar, Home, Features, Rooms, Message } from "./components";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Home />
+    <div className="main">
+      {/* <Navbar /> */}
+      {/* <Home /> */}
       <Features />
-      <Rooms />
-      <Message />
+      {/* <Rooms /> */}
+      {/* <Message /> */}
     </div>
   );
 };
