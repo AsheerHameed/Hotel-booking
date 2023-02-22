@@ -137,8 +137,11 @@
 
 @media screen and (max-width: 380px) {
  .photo_line {
-    height: 500px;
-    width: 350px !important;
+    height: 400px;
+    width: 300px !important;
+  }
+  .main_class_count{
+    gap: 30px !important;
   }
 }
 
