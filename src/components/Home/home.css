@@ -36,6 +36,14 @@
   width: 200px;
   height: 60px;
 }
+.btns_border{
+   border:1px solid #c4ae83;
+  color: #c4ae83;
+  background-color: #14171a !important;
+  border-radius: 6px;
+  width: 200px;
+  height: 60px;
+}
 .photo {
   width: 470px !important;
   height: 494px !important;
