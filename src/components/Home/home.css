@@ -74,6 +74,7 @@
   }
   .main_class_count {
     display: flex;
+    gap: -19px !important;
   }
   .photo {
     width: 290px !important;
@@ -133,3 +134,19 @@
     width: 400px !important;
   }
 }
+
+@media screen and (max-width: 380px) {
+ .photo_line {
+    height: 500px;
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+    .main_class {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
+
