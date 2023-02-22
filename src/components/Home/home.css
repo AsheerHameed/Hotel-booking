@@ -145,10 +145,10 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1150px) {
     .main_class {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
 
   }
 }
