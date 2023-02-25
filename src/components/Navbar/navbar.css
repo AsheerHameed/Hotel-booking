@@ -1,0 +1,158 @@
+.hotel__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hotel__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hotel__name p {
+  color: #c4ae83;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  margin-left: 1.5rem;
+  cursor:pointer;
+  font-weight: 600;
+}
+.hotel__navbar-logo img {
+  width: 80px;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: 8rem;
+}
+
+.app__navbar-links li {
+  margin-left: 4rem;
+  cursor: pointer;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+}
+
+.app__navbar-links li:hover {
+  color: #c4ae83;
+}
+
+.app__navbar-links li:active {
+  border-bottom: 6px solid #c4ae83;
+}
+.app__navbar-call {
+  background-color: var(--color--bg);
+  border: 1px solid #c4ae83;
+  border-radius: 40px 5px;
+  width: 184px;
+  height: 64px;
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #c4ae83;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-bg);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 16px;
+  color: var(--color-text);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+  color: var(--color-text);
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: #c4ae83;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+  .hotel__navbar-logo img {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__navbar-links {
+    display: none;
+  }
+
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+  .app__navbar-call {
+    margin-left: 12rem;
+    width: 120px;
+    height: 52px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hotel__navbar {
+    padding: 1rem;
+  }
+  .hotel__name p {
+    font-size: 1.4rem;
+    color: #c4ae83;
+    font-weight: 600;
+
+  }
+
+  .app__navbar-call {
+    display: none;
+  }
+
+  .hotel__navbar-logo img {
+    width: 60px;
+  }
+}

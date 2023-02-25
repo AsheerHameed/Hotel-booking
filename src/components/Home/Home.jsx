@@ -14,7 +14,7 @@ const Home = () => {
         <div className="text_area">
           <Typography className="main_head">
             <span className="stay">Stay In</span> <br />
-            Tranquility .
+            Tranquility.
           </Typography>
 
           <Typography className="sub_head">

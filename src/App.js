@@ -5,11 +5,11 @@ import { Navbar, Home, Features, Rooms, Message } from "./components";
 const App = () => {
   return (
     <div className="main">
-      {/* <Navbar /> */}
+      <Navbar />
       <Home />
-      {/* <Features /> */}
+      <Features />
       {/* <Rooms /> */}
-      {/* <Message /> */}
+      <Message />
     </div>
   );
 };
