@@ -26,44 +26,73 @@
   font-weight: 400 !important;
   font-size: 1.5rem !important;
   line-height: 28px !important;
-  color: #fff;
+  color: #6b6b6b;
 }
-.btns {
-  background-color: #c4ae83;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  width: 200px;
-  height: 60px;
+.explore_btn {
+  width: 214px;
+  height: 64px;
+  background: #c4ae83;
+  box-shadow: 0px 64.8148px 46.8519px rgba(24, 167, 185, 0.0759259),
+    0px 38.5185px 25.4815px rgba(24, 167, 185, 0.0607407),
+    0px 20px 13px rgba(24, 167, 185, 0.05),
+    0px 8.14815px 6.51852px rgba(24, 167, 185, 0.0392593),
+    0px 1.85185px 3.14815px rgba(24, 167, 185, 0.0240741);
+  border-radius: 40px 5px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #ffffff;
 }
-.btns_border{
-   border:1px solid #c4ae83;
+.contact_btn {
+  background-color: var(--color-bg);
+  border: 1px solid #c4ae83;
+  width: 214px;
+  height: 64px;
+  filter: drop-shadow(0px 100px 80px rgba(56, 56, 56, 0.1))
+    drop-shadow(0px 64.8148px 46.8519px rgba(56, 56, 56, 0.0759259))
+    drop-shadow(0px 38.5185px 25.4815px rgba(56, 56, 56, 0.0607407))
+    drop-shadow(0px 20px 13px rgba(56, 56, 56, 0.05))
+    drop-shadow(0px 8.14815px 6.51852px rgba(56, 56, 56, 0.0392593))
+    drop-shadow(0px 1.85185px 3.14815px rgba(56, 56, 56, 0.0240741));
+  border-radius: 40px 5px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.5px;
   color: #c4ae83;
-  background-color: #14171a !important;
-  border-radius: 6px;
-  width: 200px;
-  height: 60px;
 }
 .photo {
   width: 470px !important;
   height: 494px !important;
 }
-
+.number_photo {
+  position: absolute;
+  z-index: 1;
+}
 .sub_head2 {
   font-family: "Poppins" !important;
   font-style: normal !important;
   font-weight: 500 !important;
-  font-size: 40px !important;
+  font-size: 1.6rem !important;
   line-height: 100% !important;
   color: #fff;
+  position: absolute;
+  z-index: 2;
 }
 .sub_head3 {
   font-family: "Poppins" !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  font-size: 20px !important;
+  font-size:1.6rem !important;
   line-height: 130% !important;
   color: #6b6b6b !important;
+  position: absolute;
+  z-index: 1;
 }
 .main_class_btn {
   display: flex;
@@ -104,29 +133,25 @@
     font-size: 1.3rem !important;
     display: block !important;
     line-height: 28px !important;
-    color: #fff;
+    color: #6b6b6b;
   }
   .main_class_btn {
     display: flex;
   }
-  .btns {
-    background-color: #c4ae83;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    width: 70px;
-    height: 40px;
-    font-size: 12px !important;
+  .explore_btn {
+    width: 140px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 20px;
   }
-  .btns_border{
-   border:1px solid #c4ae83;
-  color: #c4ae83;
-  background-color: #14171a !important;
-  border-radius: 3px;
-  width: 70px;
-   height: 40px;
-    font-size: 12px !important;
-}
+  .contact_btn {
+    width: 140px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
   .sub_head2 {
     font-family: "Poppins" !important;
     font-style: normal !important;
@@ -153,20 +178,18 @@
 }
 
 @media screen and (max-width: 380px) {
- .photo_line {
+  .photo_line {
     height: 400px;
     width: 300px !important;
   }
-  .main_class_count{
+  .main_class_count {
     gap: 30px !important;
   }
 }
 
 @media screen and (max-width: 1150px) {
-    .main_class {
+  .main_class {
     display: flex;
     flex-direction: column-reverse !important;
-
   }
 }
-

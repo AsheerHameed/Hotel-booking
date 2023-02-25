@@ -25,12 +25,16 @@ const Home = () => {
             sea shore.
           </Typography>
           <div className="main_class_btn" style={{ gap: "10px" }}>
-            <button className="btns">Explore</button>
+            <button className="explore_btn">Explore</button>
             <a href="tel:123">
-              <button className="btns_border">Contact Us</button>
+              <button className="contact_btn">Contact Us</button>
             </a>
           </div>
           <div className="main_class_count" style={{ gap: "100px" }}>
+            <div className="class_count">
+
+              
+            </div>
             <div>
               <img
                 className="number_photo"
@@ -55,8 +59,12 @@ const Home = () => {
                 src={homecircle3}
                 alt="hotelbg"
               ></img>
-              <Typography className="sub_head2">25,356</Typography>
-              <Typography className="sub_head3">Project Done</Typography>
+              <div>
+                <Typography className="sub_head2">25,356</Typography>
+              </div>
+              <div>
+                <Typography className="sub_head3">Project Done</Typography>
+              </div>
             </div>
           </div>
         </div>
