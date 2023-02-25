@@ -26,7 +26,9 @@ const Home = () => {
           </Typography>
           <div className="main_class_btn" style={{ gap: "10px" }}>
             <button className="btns">Explore</button>
-            <button className="btns">Contact Us</button>
+            <a href="tel:123">
+              <button className="btns_border">Contact Us</button>
+            </a>
           </div>
           <div className="main_class_count" style={{ gap: "100px" }}>
             <div>

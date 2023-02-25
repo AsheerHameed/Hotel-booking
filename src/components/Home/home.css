@@ -36,6 +36,14 @@
   width: 200px;
   height: 60px;
 }
+.btns_border{
+   border:1px solid #c4ae83;
+  color: #c4ae83;
+  background-color: #14171a !important;
+  border-radius: 6px;
+  width: 200px;
+  height: 60px;
+}
 .photo {
   width: 470px !important;
   height: 494px !important;
@@ -110,6 +118,15 @@
     height: 40px;
     font-size: 12px !important;
   }
+  .btns_border{
+   border:1px solid #c4ae83;
+  color: #c4ae83;
+  background-color: #14171a !important;
+  border-radius: 3px;
+  width: 70px;
+   height: 40px;
+    font-size: 12px !important;
+}
   .sub_head2 {
     font-family: "Poppins" !important;
     font-style: normal !important;
@@ -145,10 +162,10 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1150px) {
     .main_class {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
 
   }
 }
