@@ -8,7 +8,7 @@ const App = () => {
       <Navbar />
       <Home />
       <Features />
-      {/* <Rooms /> */}
+      <Rooms />
       <Message />
     </div>
   );

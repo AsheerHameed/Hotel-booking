@@ -137,6 +137,7 @@
   }
   .main_class_btn {
     display: flex;
+    flex-wrap: wrap;
   }
   .explore_btn {
     width: 140px;
