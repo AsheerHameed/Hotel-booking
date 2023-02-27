@@ -86,3 +86,19 @@ a {
     margin: 4rem 1.5rem;
   }
 }
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c4ae836e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4ae83;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  background: #14171a;
+  max-width: 10px;
+  height: 10px;
+}

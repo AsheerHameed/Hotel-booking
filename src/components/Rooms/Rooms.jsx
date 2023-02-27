@@ -8,39 +8,9 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import "./rooms.css";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import Data from "./data";
 
-import {
-  washroom1,
-  double_br6,
-  double_br5,
-  double_br4,
-  double_br3,
-  double_br2,
-  double_br1,
-  double_br,
-  thumbnail,
-  washroomHomestay,
-  home_stay6,
-  home_stay5,
-  home_stay4,
-  home_stay3,
-  home_stay2,
-  home_stay1,
-  topView,
-  othersLocation,
-  othersBeach4,
-  othersBeach3,
-  othersBeach,
-  othersBeach2,
-  nightView,
-  beachViewNight,
-  bonfire,
-  bonfire1,
-  bonfire2,
-  bonfire3,
-} from "./imports";
+
 
 function Product() {
   const [items, setItems] = useState(Data);
@@ -210,7 +180,7 @@ function Product() {
       </Box>
       <Grid container spacing={4} ml={2}>
         {items.map((element) => {
-          const { image, category, name } = element;
+          // const { image, category, name } = element;
           return (
             <Grid item xs={12} lg={4} md={8}>
               <Box
@@ -229,7 +199,7 @@ function Product() {
                   <CardMedia
                     component="img"
                     sx={{ height: { lg: "340px", xs: "270px" } }}
-                    image={image}
+                    image={element?.image}
                   />
                   <CardContent>
                     <Box>
@@ -244,7 +214,7 @@ function Product() {
                           textAlign: "left",
                         }}
                       >
-                        Category : {category}
+                        Category : {element?.category}
                       </Typography>
                       <Typography
                         sx={{
@@ -257,7 +227,7 @@ function Product() {
                           textAlign: "left",
                         }}
                       >
-                        {name}
+                        {element?.name}
                       </Typography>
                     </Box>
                   </CardContent>
