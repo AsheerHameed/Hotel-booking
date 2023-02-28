@@ -1,16 +1,7 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Typography,
-  CardMedia,
-  Grid,
-} from "@mui/material";
+import { Box, Typography, CardMedia, Grid } from "@mui/material";
 import React, { useState } from "react";
 import "./rooms.css";
 import Data from "./data";
-
-
 
 function Product() {
   const [items, setItems] = useState(Data);
@@ -21,70 +12,40 @@ function Product() {
     setItems(updatedItems);
   };
 
-  const [isActiveAllProduct, setActiveAllProduct] = useState(true);
-  const ToggleClassAllProduct = () => {
-    setActiveAllProduct(true);
-    setActiveCoats(false);
-    setActiveSkirt(false);
-    setActiveShort(false);
-    setActiveTshirt(false);
-    setActiveDress(false);
+  const [isActiveAll, setActiveAll] = useState(true);
+  const ToggleClassAll = () => {
+    setActiveAll(true);
+    setActiveDoubleBedrooms(false);
+    setActiveHomeStay(false);
+    setActiveOthers(false);
   };
 
-  const [isActiveCoats, setActiveCoats] = useState(false);
-  const ToggleClassCoats = () => {
-    setActiveAllProduct(false);
-    setActiveCoats(true);
-    setActiveSkirt(false);
-    setActiveShort(false);
-    setActiveTshirt(false);
-    setActiveDress(false);
+  const [isActiveDoubleBedrooms, setActiveDoubleBedrooms] = useState(false);
+  const ToggleClassDoubleBedrooms = () => {
+    setActiveAll(false);
+    setActiveDoubleBedrooms(true);
+    setActiveHomeStay(false);
+    setActiveOthers(false);
   };
 
-  const [isActiveDress, setActiveDress] = useState(false);
-  const ToggleClassDress = () => {
-    setActiveAllProduct(false);
-    setActiveCoats(false);
-    setActiveDress(true);
-    setActiveSkirt(false);
-    setActiveShort(false);
-    setActiveTshirt(false);
+  const [isActiveHomeStay, setActiveHomeStay] = useState(false);
+  const ToggleClassHomeStay = () => {
+    setActiveAll(false);
+    setActiveDoubleBedrooms(false);
+    setActiveHomeStay(true);
+    setActiveOthers(false);
   };
 
-  const [isActiveSkirt, setActiveSkirt] = useState(false);
-  const ToggleClassSkirt = () => {
-    setActiveAllProduct(false);
-    setActiveCoats(false);
-    setActiveSkirt(true);
-    setActiveShort(false);
-    setActiveTshirt(false);
-    setActiveDress(false);
+  const [isActiveOthers, setActiveOthers] = useState(false);
+  const ToggleClassOthers = () => {
+    setActiveAll(false);
+    setActiveDoubleBedrooms(false);
+    setActiveHomeStay(false);
+    setActiveOthers(true);
   };
-  const [isActiveShort, setActiveShort] = useState(false);
-  const ToggleClassShort = () => {
-    setActiveAllProduct(false);
-    setActiveCoats(false);
-    setActiveSkirt(false);
-    setActiveShort(true);
-    setActiveDress(false);
-    setActiveTshirt(false);
-  };
-  const [isActiveTshirt, setActiveTshirt] = useState(false);
-  const ToggleClassTshirt = () => {
-    setActiveAllProduct(false);
-    setActiveCoats(false);
-    setActiveSkirt(false);
-    setActiveShort(false);
-    setActiveTshirt(true);
-    setActiveDress(false);
-  };
+
   return (
-    <Box
-      className="section__padding"
-      sx={{
-        borderRadius: "8px",
-      }}
-    >
+    <Box className="section__padding">
       <Box>
         <Typography
           sx={{
@@ -97,7 +58,7 @@ function Product() {
             paddingTop: "20px",
           }}
         >
-          Our Latest
+          Our Rooms Gallery
         </Typography>
       </Box>
       <Box
@@ -111,7 +72,7 @@ function Product() {
         }}
       >
         <Typography
-          className={isActiveAllProduct ? "active" : null}
+          className={isActiveAll ? "active" : null}
           sx={{
             fontFamily: "Poppins",
             fontSize: { xs: "14px", lg: "16px" },
@@ -121,14 +82,14 @@ function Product() {
           }}
           onClick={() => {
             setItems(Data);
-            ToggleClassAllProduct();
+            ToggleClassAll();
           }}
         >
           All Rooms
         </Typography>
 
         <Typography
-          className={isActiveCoats ? "active" : null}
+          className={isActiveDoubleBedrooms ? "active" : null}
           sx={{
             fontFamily: "Poppins",
             fontSize: { xs: "14px", lg: "16px" },
@@ -137,15 +98,15 @@ function Product() {
             cursor: "pointer",
           }}
           onClick={() => {
-            filterItem("Jackets");
-            ToggleClassCoats();
+            filterItem("Double Bedroom");
+            ToggleClassDoubleBedrooms();
           }}
         >
           Double Bedrooms
         </Typography>
 
         <Typography
-          className={isActiveDress ? "active" : null}
+          className={isActiveHomeStay ? "active" : null}
           sx={{
             fontFamily: "Poppins",
             fontSize: { xs: "14px", lg: "16px" },
@@ -154,15 +115,15 @@ function Product() {
             cursor: "pointer",
           }}
           onClick={() => {
-            filterItem("Dresses");
-            ToggleClassDress();
+            filterItem("Home stay");
+            ToggleClassHomeStay();
           }}
         >
           Home stay
         </Typography>
 
         <Typography
-          className={isActiveShort ? "active" : null}
+          className={isActiveOthers ? "active" : null}
           sx={{
             fontFamily: "Poppins",
             fontSize: { xs: "14px", lg: "16px" },
@@ -171,72 +132,43 @@ function Product() {
             cursor: "pointer",
           }}
           onClick={() => {
-            filterItem("Shorts");
-            ToggleClassShort();
+            filterItem("Others");
+            ToggleClassOthers();
           }}
         >
           Others
         </Typography>
       </Box>
+
       <Grid container spacing={4} ml={2}>
         {items.map((element) => {
           // const { image, category, name } = element;
           return (
             <Grid item xs={12} lg={4} md={8}>
               <Box
-                width="240px"
+                className="image__container"
                 sx={{
                   marginLeft: { xs: "start" },
                 }}
               >
-                <Card
-                  sx={{
-                    height: { xs: "360px", lg: "" },
-                    width: { xs: "210px", lg: "360px" },
-                    borderRadius: "15px",
-                  }}
-                >
+                <Box className="photo-gallery">
                   <CardMedia
+                    className="photo-gallery-images"
                     component="img"
-                    sx={{ height: { lg: "340px", xs: "270px" } }}
+                    sx={{
+                      height: { lg: "420px", xs: "270px" },
+                      width: { lg: "420px", xs: "270px" },
+                      borderRadius: "10px",
+                    }}
                     image={element?.image}
                   />
-                  <CardContent>
-                    <Box>
-                      <Typography
-                        variant="span"
-                        sx={{
-                          fontFamily: "Poppins",
-                          fontSize: { lg: "12px", xs: "8px" },
-                          display: "flex",
-                          justifyContent: "flex-start",
-                          color: "#6b6b6b",
-                          textAlign: "left",
-                        }}
-                      >
-                        Category : {element?.category}
-                      </Typography>
-                      <Typography
-                        sx={{
-                          color: "var(--color-bg)",
-                          fontFamily: "Poppins",
-                          fontSize: { lg: "24px", xs: "16px" },
-                          fontWeight: "bolder",
-                          display: "flex",
-                          justifyContent: "flex-start",
-                          textAlign: "left",
-                        }}
-                      >
-                        {element?.name}
-                      </Typography>
-                    </Box>
-                  </CardContent>
-                </Card>
+                </Box>
               </Box>
             </Grid>
           );
         })}
       </Grid>
+
       <div className="findOut">
         <button role="button">Call us Now!</button>
       </div>

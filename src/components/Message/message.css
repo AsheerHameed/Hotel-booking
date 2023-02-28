@@ -1,11 +1,3 @@
-.message_content {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--color-text);
-  padding: 1rem 10rem;
-}
 .message_head h2 {
   font-family: var(--font-family);
   font-weight: 600;
@@ -22,21 +14,32 @@
 .apostropheStart img {
   padding: 4rem 0;
 }
-/* .message_bg img {
-  opacity: 0.4;
-  border-radius: 30px;
-} */
-.message_content {
-  background: rgb(20, 23, 26);
-  background: radial-gradient(
-    circle,
-    rgba(20, 23, 26, 1) 0%,
-    rgba(255, 255, 255, 0.2553396358543417) 100%
-  );
-  height: max-content;
-  border-radius: 2rem;
+.message_background {
+  position: relative;
+  z-index: 1;
 }
-
+.message_background:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../../assets/messageBackground.jpg) center center;
+  opacity: 0.4;
+ border-radius: 12px;
+}
+.message_content{
+   width: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--color-text);
+  padding: 3rem 4rem;
+}
 @media screen and (max-width: 1050px) {
   .apostropheEnd img {
     width: 4.5rem;
@@ -68,6 +71,6 @@
   }
   .apostropheStart img {
     width: 3.5rem;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
 }
