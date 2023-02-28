@@ -45,13 +45,6 @@
 }
 
 /* Style the active class, and buttons on mouse-over */
-.active{
-    color:#fb8332
-  }
-
-  a:link:active{
-    background-color: #fa6400;
-  } */
 
 /* Style the active class, and buttons on mouse-over */
 .active {
