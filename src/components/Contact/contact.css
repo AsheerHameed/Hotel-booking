@@ -1,0 +1,135 @@
+.hotel_contact-heading h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+.hotel_contact-heading-p p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+.contact_form_wrapper {
+  padding: 2rem;
+  display: flex;
+}
+.contact_form_wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact_form_wrapper input {
+  background: #f9f9f9;
+  border-radius: 7px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #6b6b6b;
+  width: 489px;
+  height: 64px;
+  padding: 0 3rem;
+  border: solid 1px var(--color-text);
+  background-color: var(--color-bg);
+  border-radius: 10px;
+}
+.contact_form_wrapper textarea {
+  width: 489px;
+  height: 200px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #6b6b6b;
+  padding: 1rem 3rem;
+  border: solid 1px var(--color-text);
+  background-color: var(--color-bg);
+  border-radius: 10px;
+}
+.contact_content {
+  display: flex;
+  gap: 35px;
+  padding: 3rem 0;
+}
+
+input[type="submit"] {
+  max-width: 16rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #c4ae83;
+  box-shadow: 0px 64.8148px 46.8519px rgba(24, 167, 185, 0.0759259),
+    0px 38.5185px 25.4815px rgba(24, 167, 185, 0.0607407),
+    0px 20px 13px rgba(24, 167, 185, 0.05),
+    0px 8.14815px 6.51852px rgba(24, 167, 185, 0.0392593),
+    0px 1.85185px 3.14815px rgba(24, 167, 185, 0.0240741);
+  border-radius: 40px 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact_content {
+    gap: 3px;
+  }
+  .form_location_wrapper iframe {
+    width: 380px;
+  }
+  .contact_form_wrapper input,
+  .contact_form_wrapper textarea {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact_content {
+    flex-direction: column;
+  }
+  .contact_form_wrapper input,
+  .contact_form_wrapper textarea {
+    width: 380px;
+  }
+  .hotel_contact-heading h2 {
+    font-size: 2.3rem;
+    line-height: 35px;
+  }
+
+  .hotel_contact-heading-p p {
+    font-size: 1.2rem;
+    padding: 3px 0;
+  }
+  .submit_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .submit_button input {
+    width: 12rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact_form_wrapper input,
+  .contact_form_wrapper textarea {
+    width: 280px;
+  }
+  .form_location_wrapper iframe {
+    width: 280px;
+  }
+}

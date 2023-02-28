@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Navbar, Home, Features, Rooms, Message } from "./components";
+import { Navbar, Home, Features, Rooms, Message,Contact } from "./components";
 
 const App = () => {
   return (
@@ -8,8 +8,10 @@ const App = () => {
       <Navbar />
       <Home />
       <Features />
-      <Rooms />
+      {/* <Rooms /> */}
       <Message />
+      <Contact />
+      
     </div>
   );
 };
