@@ -85,7 +85,7 @@ function Product() {
             ToggleClassAll();
           }}
         >
-          All Rooms
+          All Rooms&nbsp;&nbsp;|
         </Typography>
 
         <Typography
@@ -102,7 +102,7 @@ function Product() {
             ToggleClassDoubleBedrooms();
           }}
         >
-          Double Bedrooms
+          Double Bedrooms&nbsp;&nbsp;|
         </Typography>
 
         <Typography
@@ -119,7 +119,7 @@ function Product() {
             ToggleClassHomeStay();
           }}
         >
-          Home stay
+          Home stay&nbsp;&nbsp;|
         </Typography>
 
         <Typography
@@ -140,7 +140,7 @@ function Product() {
         </Typography>
       </Box>
 
-      <Grid container spacing={4} ml={2}>
+      <Grid container spacing={2} mx={"auto"}>
         {items.map((element) => {
           // const { image, category, name } = element;
           return (

@@ -32,46 +32,46 @@ import {
 const Data = [
   {
     id: 1,
-    image: washroom1,
-    category: "Double Bedroom",
-    name: "Double Bedroom",
-  },
-  {
-    id: 2,
     image: double_br6,
     category: "Double Bedroom",
     name: "Double Bedroom",
   },
-  {
-    id: 3,
-    image: double_br,
-    category: "Double Bedroom",
-    name: "Double Bedroom",
-  },
-  {
-    id: 4,
-    image: double_br1,
-    category: "Double Bedroom",
-    name: "Double Bedroom",
-  },
-  {
-    id: 5,
-    image: double_br2,
-    category: "Double Bedroom",
-    name: "Double Bedroom",
-  },
+  // {
+  //   id: 2,
+  //   image: washroom1,
+  //   category: "Double Bedroom",
+  //   name: "Double Bedroom",
+  // },
+  // {
+  //   id: 3,
+  //   image: double_br,
+  //   category: "Double Bedroom",
+  //   name: "Double Bedroom",
+  // },
+  // {
+  //   id: 4,
+  //   image: double_br1,
+  //   category: "Double Bedroom",
+  //   name: "Double Bedroom",
+  // },
+  // {
+  //   id: 5,
+  //   image: double_br2,
+  //   category: "Double Bedroom",
+  //   name: "Double Bedroom",
+  // },
   {
     id: 6,
     image: double_br3,
     category: "Double Bedroom",
     name: "Double Bedroom",
   },
-  {
-    id: 7,
-    image: double_br4,
-    category: "Double Bedroom",
-    name: "Double Bedroom",
-  },
+  // {
+  //   id: 7,
+  //   image: double_br4,
+  //   category: "Double Bedroom",
+  //   name: "Double Bedroom",
+  // },
   {
     id: 8,
     image: double_br5,
@@ -152,18 +152,18 @@ const Data = [
     category: "Others",
     name: "Others",
   },
-  {
-    id: 20,
-    image: othersBeach4,
-    category: "Others",
-    name: "Others",
-  },
-  {
-    id: 21,
-    image: othersBeach3,
-    category: "Others",
-    name: "Others",
-  },
+  // {
+  //   id: 20,
+  //   image: othersBeach4,
+  //   category: "Others",
+  //   name: "Others",
+  // },
+  // {
+  //   id: 21,
+  //   image: othersBeach3,
+  //   category: "Others",
+  //   name: "Others",
+  // },
   {
     id: 22,
     image: othersBeach,
@@ -176,12 +176,12 @@ const Data = [
     category: "Others",
     name: "Others",
   },
-  {
-    id: 24,
-    image: othersBeach3,
-    category: "Others",
-    name: "Others",
-  },
+  // {
+  //   id: 24,
+  //   image: othersBeach3,
+  //   category: "Others",
+  //   name: "Others",
+  // },
   {
     id: 25,
     image: nightView,
@@ -194,18 +194,18 @@ const Data = [
     category: "Others",
     name: "Others",
   },
-  {
-    id: 27,
-    image: nightView,
-    category: "Others",
-    name: "Others",
-  },
-  {
-    id: 28,
-    image: bonfire,
-    category: "Others",
-    name: "Others",
-  },
+  // {
+  //   id: 27,
+  //   image: nightView,
+  //   category: "Others",
+  //   name: "Others",
+  // },
+  // {
+  //   id: 28,
+  //   image: bonfire,
+  //   category: "Others",
+  //   name: "Others",
+  // },
   {
     id: 29,
     image: bonfire1,
@@ -218,11 +218,11 @@ const Data = [
     category: "Others",
     name: "Others",
   },
-  {
-    id: 31,
-    image: bonfire3,
-    category: "Others",
-    name: "Others",
-  },
+  // {
+  //   id: 31,
+  //   image: bonfire3,
+  //   category: "Others",
+  //   name: "Others",
+  // },
 ];
 export default Data;

@@ -30,43 +30,7 @@ const Home = () => {
               <button className="contact_btn">Contact Us</button>
             </a>
           </div>
-          <div className="main_class_count" style={{ gap: "100px" }}>
-            <div className="class_count">
-
-              
-            </div>
-            <div>
-              <img
-                className="number_photo"
-                src={homecircle1}
-                alt="hotelbg"
-              ></img>
-              <Typography className="sub_head2">15,356</Typography>
-              <Typography className="sub_head3">Booking Done</Typography>
-            </div>
-            <div>
-              <img
-                className="number_photo"
-                src={homecircle2}
-                alt="hotelbg"
-              ></img>
-              <Typography className="sub_head2">25,356 +</Typography>
-              <Typography className="sub_head3">Happy Customers</Typography>
-            </div>
-            <div>
-              <img
-                className="number_photo"
-                src={homecircle3}
-                alt="hotelbg"
-              ></img>
-              <div>
-                <Typography className="sub_head2">25,356</Typography>
-              </div>
-              <div>
-                <Typography className="sub_head3">Project Done</Typography>
-              </div>
-            </div>
-          </div>
+        
         </div>
         <div className="photo_area">
           <Typography style={{ textAlign: "center" }}>
