@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import "./navbar.css";
+import "./Navbar.css";
 import logo from "../../assets/logo2.png";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -20,17 +20,17 @@ const Navbar = () => {
           <a href="#rooms">Rooms</a>
         </li>
         <li>
-          <a href="#stays">Home Stay</a>
+          <a href="#rooms">Home Stay</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#features">Services</a>
         </li>
         <li>
-          <a href="#about">About us</a>
+          <a href="#contact">Contact us</a>
         </li>
       </ul>
       <div className="app__navbar-call">
-        <a href="#call">Call us now!</a>
+        <a href="tel:9739640657">Call us now!</a>
       </div>
 
       <div className="app__navbar-smallscreen">

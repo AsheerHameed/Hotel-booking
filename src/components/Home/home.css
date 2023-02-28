@@ -26,7 +26,7 @@
   font-weight: 400 !important;
   font-size: 1.5rem !important;
   line-height: 28px !important;
-  color: #6b6b6b;
+  color: #ffffff;
 }
 .explore_btn {
   width: 214px;
@@ -67,8 +67,9 @@
   color: #c4ae83;
 }
 .photo {
-  width: 470px !important;
-  height: 494px !important;
+  width: 570px !important;
+  height: 574px !important;
+  margin-top: -4rem;
 }
 .number_photo {
   position: absolute;
@@ -97,11 +98,6 @@
 .main_class_btn {
   display: flex;
 }
-.photo_line_div {
-  position: absolute;
-  top: 0;
-  left: 200 !important;
-}
 
 @media screen and (max-width: 600px) {
   .main_class {
@@ -114,8 +110,10 @@
     gap: -19px !important;
   }
   .photo {
-    width: 290px !important;
-    height: 294px !important;
+    margin-top: 1rem;
+    margin-left: -5rem;
+    width: 100% !important;
+    height: 100% !important;
     z-index: 4 !important;
   }
   .main_head {
@@ -133,7 +131,7 @@
     font-size: 1.3rem !important;
     display: block !important;
     line-height: 28px !important;
-    color: #6b6b6b;
+    color:var(--color-text);
   }
   .main_class_btn {
     display: flex;

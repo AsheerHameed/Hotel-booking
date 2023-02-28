@@ -2,14 +2,9 @@ import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import "./home.css";
 import features from "../../assets/grouphomwbg.png";
-import homecircle1 from "../../assets/homecircle.png";
-import homecircle2 from "../../assets/homecirle2.png";
-import homecircle3 from "../../assets/homecirle3.png";
-import line from "../../assets/homeline.png";
-
 const Home = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative" }} id="home">
       <div className="main_class section__padding">
         <div className="text_area">
           <Typography className="main_head">
@@ -26,7 +21,7 @@ const Home = () => {
           </Typography>
           <div className="main_class_btn" style={{ gap: "10px" }}>
             <button className="explore_btn">Explore</button>
-            <a href="tel:123">
+            <a href="tel:7259028706">
               <button className="contact_btn">Contact Us</button>
             </a>
           </div>
@@ -37,9 +32,6 @@ const Home = () => {
             <img className="photo" src={features} alt="hotelbg"></img>
           </Typography>
         </div>
-      </div>
-      <div className="photo_line_div">
-        <img className="photo_line" style={{}} src={line} alt="line"></img>
       </div>
     </div>
   );

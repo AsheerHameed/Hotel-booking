@@ -45,7 +45,7 @@ function Product() {
   };
 
   return (
-    <Box className="section__padding">
+    <Box className="section__padding" id="rooms" style={{marginBottom:"30px"}}>
       <Box>
         <Typography
           sx={{
@@ -75,7 +75,7 @@ function Product() {
           className={isActiveAll ? "active" : null}
           sx={{
             fontFamily: "Poppins",
-            fontSize: { xs: "14px", lg: "16px" },
+            fontSize: { xs: "12px", lg: "16px" },
             fontWeight: "600",
             color: "#6b6b6b",
             cursor: "pointer",
@@ -85,14 +85,14 @@ function Product() {
             ToggleClassAll();
           }}
         >
-          All Rooms&nbsp;&nbsp;|
+          All Images
         </Typography>
 
         <Typography
           className={isActiveDoubleBedrooms ? "active" : null}
           sx={{
             fontFamily: "Poppins",
-            fontSize: { xs: "14px", lg: "16px" },
+            fontSize: { xs: "12px", lg: "16px" },
             fontWeight: "600",
             color: "#6b6b6b",
             cursor: "pointer",
@@ -102,14 +102,14 @@ function Product() {
             ToggleClassDoubleBedrooms();
           }}
         >
-          Double Bedrooms&nbsp;&nbsp;|
+          Double Bedrooms
         </Typography>
 
         <Typography
           className={isActiveHomeStay ? "active" : null}
           sx={{
             fontFamily: "Poppins",
-            fontSize: { xs: "14px", lg: "16px" },
+            fontSize: { xs: "12px", lg: "16px" },
             fontWeight: "600",
             color: "#6b6b6b",
             cursor: "pointer",
@@ -119,14 +119,14 @@ function Product() {
             ToggleClassHomeStay();
           }}
         >
-          Home stay&nbsp;&nbsp;|
+          Home stay
         </Typography>
 
         <Typography
           className={isActiveOthers ? "active" : null}
           sx={{
             fontFamily: "Poppins",
-            fontSize: { xs: "14px", lg: "16px" },
+            fontSize: { xs: "12px", lg: "16px" },
             fontWeight: "600",
             color: "#6b6b6b",
             cursor: "pointer",
@@ -144,10 +144,13 @@ function Product() {
         {items.map((element) => {
           // const { image, category, name } = element;
           return (
-            <Grid item xs={12} lg={4} md={8}>
+            <Grid Box xs={12} md={6} lg={4}>
               <Box
                 className="image__container"
                 sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                   marginLeft: { xs: "start" },
                 }}
               >
@@ -158,7 +161,8 @@ function Product() {
                     sx={{
                       height: { lg: "420px", xs: "270px" },
                       width: { lg: "420px", xs: "270px" },
-                      borderRadius: "10px",
+                      borderRadius: "28px",
+                      padding: "12px",
                     }}
                     image={element?.image}
                   />
@@ -168,10 +172,6 @@ function Product() {
           );
         })}
       </Grid>
-
-      <div className="findOut">
-        <button role="button">Call us Now!</button>
-      </div>
     </Box>
   );
 }

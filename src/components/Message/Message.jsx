@@ -8,7 +8,6 @@ const Message = () => {
       <div className="message_head flex__center">
         <h2>Message from the owner</h2>
       </div>
-      {/* <div className="message_bg flex__center"></div> */}
       <div className="message_background">
         <div className="message_content">
           <div className="apostropheStart">

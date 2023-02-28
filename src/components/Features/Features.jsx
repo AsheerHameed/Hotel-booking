@@ -1,16 +1,16 @@
 import React from "react";
-import { features, Rectangle1, Rectangle2, Rectangle3 } from "./imports";
+import { features, Rectangle1, Rectangle2, Rectangle3 ,bonfire_1} from "./imports";
 import "./features.css";
 const Features = () => {
   return (
-    <div className="features_wrapper section__padding">
+    <div className="features_wrapper section__padding" id="features">
       <div className="features_heading flex__center">
         <h2>Why Choose Us?</h2>
       </div>
 
-      <div className="features_container">
+      <div className="features_container" >
         <div className="features_image flex__center">
-          <img src={features} alt="features" />
+          <img src={bonfire_1} alt="features" />
         </div>
         <div className="features_content_container">
           <div className="features_content">

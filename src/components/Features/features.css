@@ -14,7 +14,9 @@
 .features_image img {
   width: 34rem;
   height: 50rem;
+  object-fit: cover;
   margin: 4rem 0;
+  border-radius: 10px 142px 10px 10px;
 }
 .feature_number {
   margin-top: -8rem;
